@@ -1,0 +1,23 @@
+{
+  "name": "spark-surfers-web",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A static web-page",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.{js,css,html}",
+    "start": "http-server src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.8.0",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "spark-surfers-web": "file:"
+  }
+}

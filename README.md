@@ -1,2 +1,3 @@
-# spark-surfers-web
-A static web-page
+# Spark Surfers Website
+
+Welcome to the Spark Surfers Website repository.
