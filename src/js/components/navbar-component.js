@@ -43,7 +43,7 @@ class NavBarComponent extends HTMLElement {
     event.preventDefault();
     const path = event.target.getAttribute('href');
     window.history.pushState({}, '', path);
-    this.dispatchEvent(new CustomEvent('navigate', { detail:path }));
+    this.dispatchEvent(new CustomEvent('navigate', { detail: path }));
   }
 }
 window.customElements.define('navbar-component', NavBarComponent);
