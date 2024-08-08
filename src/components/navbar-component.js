@@ -1,0 +1,71 @@
+class NavBarComponent extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.innerHTML = `
+    <style>
+      :host {
+        display: block;
+        background-color: #444;
+        color: #fff;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        height: 60px;
+      }
+
+      nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        box-sizing: border-box;
+      }
+
+      a {
+        height: 100%;
+        padding: 0.5rem 1.5rem;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        transition: background-color 0.3s, color 0.3s;
+        border-left: 1px solid #555;
+      }
+
+      a:first-child {
+        border-left: none;
+      }
+
+      a:hover {
+        background-color: #666;
+        color: #000;
+      }
+    </style>
+
+    <nav>
+        <a href="/" data-link>Home</a>
+        <a href="/about" data-link>About</a>
+        <a href="/projects" data-link>Projects</a>
+        <a href="/contact" data-link>Contact</a>
+    </nav>
+    `;
+    this.onNavigate = this.onNavigate.bind(this);
+  }
+
+  connectedCallback() {
+    this.shadowRoot.querySelectorAll('a[data-link]').forEach((link) => {
+      link.addEventListener('click', this.onNavigate);
+    });
+  }
+
+  onNavigate(event) {
+    event.preventDefault();
+    const path = event.target.getAttribute('href');
+    window.history.pushState({}, '', path);
+    this.dispatchEvent(new CustomEvent('navigate', { detail: path }));
+  }
+}
+window.customElements.define('navbar-component', NavBarComponent);
+
+export default NavBarComponent;

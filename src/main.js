@@ -1,6 +1,7 @@
 import './components/header-component.js';
 import './components/navbar-component.js';
 import './components/overlay-component.js';
+import './components/footer-component.js';
 
 document
   .querySelector('navbar-component')
