@@ -11,7 +11,6 @@ class FooterComponent extends HTMLElement {
             height: 100px;
             color: #fff;
             padding: 1rem;
-            position: fixed;
             bottom: 0;
             left: 0;
             box-sizing: border-box;
