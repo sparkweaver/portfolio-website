@@ -1,0 +1,44 @@
+.content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.content-box img {
+  float: left;
+  width: auto;
+  height: 20rem;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #444;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.homepage-list {
+  margin-left: 1rem;
+}
+
+.homepage-list li {
+  margin-bottom: 10px;
+}
+
+.homepage-list li strong {
+  color: #444;
+}

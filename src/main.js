@@ -17,7 +17,7 @@ window.addEventListener('popstate', () => {
 function loadPageContent(path) {
   const mainContent = document.getElementById('main-content');
   const page = path === '/' ? '/home' : path;
-  fetch(`src/html/pages${page}.html`)
+  fetch(`src/pages${page}.html`)
     .then((response) => response.text())
     .then((html) => {
       mainContent.innerHTML = html;
