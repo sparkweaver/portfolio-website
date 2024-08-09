@@ -8,7 +8,6 @@ class NavBarComponent extends HTMLElement {
         display: block;
         background-color: #444;
         color: #fff;
-        padding: 0.5rem;
         box-sizing: border-box;
         height: 60px;
       }
@@ -22,6 +21,7 @@ class NavBarComponent extends HTMLElement {
 
       a {
         height: 100%;
+        width: 160px;
         padding: 0.5rem 1.5rem;
         color: #fff;
         text-decoration: none;
@@ -31,6 +31,7 @@ class NavBarComponent extends HTMLElement {
         font-size: 1.5rem;
         transition: background-color 0.3s, color 0.3s;
         border-left: 1px solid #555;
+        box-sizing: border-box;
       }
 
       a:first-child {
@@ -45,7 +46,8 @@ class NavBarComponent extends HTMLElement {
 
     <nav>
         <a href="/" data-link>Home</a>
-        <a href="/about" data-link>About</a>
+        <a href="/about" data-link>About Me</a>
+        <a href="/blog" data-link>Blog</a>
         <a href="/projects" data-link>Projects</a>
         <a href="/contact" data-link>Contact</a>
     </nav>

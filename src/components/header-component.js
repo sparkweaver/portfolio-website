@@ -10,7 +10,7 @@ class HeaderComponent extends HTMLElement {
         color: #fff;
         padding: 1rem;
         box-sizing: border-box;
-        height: 120px;
+        height: 100px;
       }
 
       header {
@@ -48,7 +48,7 @@ class HeaderComponent extends HTMLElement {
     </style>
     <header>
       <div class="image-container">
-        <img src="src/assets/logo.png" alt="Logo"/>
+        <img src="public/logo.png" alt="Logo"/>
       </div>
       <div class="text-container text">
         <h1>${this.getAttribute('title')}</h1>
