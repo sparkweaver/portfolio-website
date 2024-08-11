@@ -16,6 +16,7 @@ class NavBarComponent extends HTMLElement {
         display: flex;
         height: 100%;
         align-items: center;
+        justify-content: center;
         box-sizing: border-box;
       }
 
