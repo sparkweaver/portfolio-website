@@ -47,7 +47,7 @@ class NavBarComponent extends HTMLElement {
 
     <nav>
         <a href="/" data-link>Home</a>
-        <a href="/about" data-link>About Me</a>
+        <a href="/about" data-link>About</a>
         <a href="/blog" data-link>Blog</a>
         <a href="/projects" data-link>Projects</a>
         <a href="/contact" data-link>Contact</a>
