@@ -6,7 +6,7 @@ class HeaderComponent extends HTMLElement {
     <style>
       :host {
         display: block;
-        background-color: #333;
+        background-color: #34495e;
         color: #fff;
         padding: 1rem;
         box-sizing: border-box;

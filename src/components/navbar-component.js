@@ -6,10 +6,10 @@ class NavBarComponent extends HTMLElement {
     <style>
       :host {
         display: block;
-        background-color: #444;
+        background-color: #3498db;
         color: #fff;
         box-sizing: border-box;
-        height: 60px;
+        height: 50px;
       }
 
       nav {
@@ -40,7 +40,7 @@ class NavBarComponent extends HTMLElement {
       }
 
       a:hover {
-        background-color: #666;
+        background-color: #5dade2;
         color: #000;
       }
     </style>
