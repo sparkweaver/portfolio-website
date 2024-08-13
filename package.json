@@ -1,5 +1,5 @@
 {
-  "name": "spark-surfers-web",
+  "name": "portfolio-website",
   "version": "1.0.0",
   "type": "module",
   "description": "A static web-page",
@@ -11,13 +11,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Johan Lundmark",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^9.8.0",
     "prettier": "^3.3.3"
   },
   "dependencies": {
-    "spark-surfers-web": "file:"
+    "portfolio-website": "file:"
   }
 }

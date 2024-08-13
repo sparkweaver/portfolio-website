@@ -6,7 +6,7 @@ class HeaderComponent extends HTMLElement {
     <style>
       :host {
         display: block;
-        background-color: #333;
+        background-color: #34495e;
         color: #fff;
         padding: 1rem;
         box-sizing: border-box;
@@ -21,13 +21,10 @@ class HeaderComponent extends HTMLElement {
         box-sizing: border-box;
       }
 
-      .image-container, .text-container {
+      .text-container {
         height: 100%;
         display: flex;
         align-items: center;
-      }
-
-      .text-container {
         flex-grow: 1;
         flex-direction: column;
         justify-content: center;
@@ -40,16 +37,8 @@ class HeaderComponent extends HTMLElement {
       p {
         font-style: italic;
       }
-
-      img {
-        height: 100%;
-        width: auto;
-      }
     </style>
     <header>
-      <div class="image-container">
-        <img src="public/logo.png" alt="Logo"/>
-      </div>
       <div class="text-container text">
         <h1>${this.getAttribute('title')}</h1>
         <p>${this.getAttribute('sub-title')}</p>

@@ -31,14 +31,14 @@ a:hover {
   text-decoration: underline;
 }
 
-.homepage-list {
+.list {
   margin-left: 1rem;
 }
 
-.homepage-list li {
-  margin-bottom: 10px;
+.list li {
+  margin-bottom: 1rem;
 }
 
-.homepage-list li strong {
+.list li strong {
   color: #444;
 }

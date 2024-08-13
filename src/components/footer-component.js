@@ -6,9 +6,9 @@ class FooterComponent extends HTMLElement {
       <style>
         :host {
             display: block;
-            background-color: #333;
+            background-color: #34495e;
             width: 100%;
-            height: 80px;
+            height: 40px;
             color: #fff;
             padding: 1rem;
             bottom: 0;

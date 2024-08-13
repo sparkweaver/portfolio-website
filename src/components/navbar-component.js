@@ -6,16 +6,17 @@ class NavBarComponent extends HTMLElement {
     <style>
       :host {
         display: block;
-        background-color: #444;
+        background-color: #3498db;
         color: #fff;
         box-sizing: border-box;
-        height: 60px;
+        height: 50px;
       }
 
       nav {
         display: flex;
         height: 100%;
         align-items: center;
+        justify-content: center;
         box-sizing: border-box;
       }
 
@@ -39,14 +40,14 @@ class NavBarComponent extends HTMLElement {
       }
 
       a:hover {
-        background-color: #666;
+        background-color: #5dade2;
         color: #000;
       }
     </style>
 
     <nav>
         <a href="/" data-link>Home</a>
-        <a href="/about" data-link>About Me</a>
+        <a href="/about" data-link>About</a>
         <a href="/blog" data-link>Blog</a>
         <a href="/projects" data-link>Projects</a>
         <a href="/contact" data-link>Contact</a>
