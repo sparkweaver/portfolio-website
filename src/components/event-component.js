@@ -2,6 +2,14 @@ class EventComponent extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
+
+    const title = this.getAttribute('title') || '';
+    const date = this.getAttribute('date') || '';
+    const description = this.getAttribute('description') || '';
+    const image = this.getAttribute('image');
+    const linkText = this.getAttribute('link-text');
+    const link = this.getAttribute('link');
+
     this.shadowRoot.innerHTML = `
       <style>
         :host {
@@ -10,33 +18,42 @@ class EventComponent extends HTMLElement {
           padding: 1rem;
           box-sizing: border-box;
           border-radius: 10px;
-          margin: 1rem;
-          max-width: 80%;
+          margin-bottom: 1rem;
+          width: 100%;
         }
   
         .event-container {
           display: flex;
           flex-direction: row;
-          align-items: center;
-          text-align: center;
+          align-items: stretch;
           gap: 2rem;
+          height: 100%;
         }
   
         .event-image {
+          float: left;
           width: auto;
-          height: 100%;
+          height: auto;
           max-width: 20%;
           object-fit: cover;
           border-radius: 10px;
         }
+
+        .event-data {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
   
         h2 {
-          margin: 1rem 0 0.5rem 0;
+          margin: 0;
           font-size: 1.5rem;
         }
   
         p {
-          margin: 0.5rem 0;
+          margin: 0;
           font-size: 1rem;
         }
   
@@ -46,13 +63,14 @@ class EventComponent extends HTMLElement {
         }
   
         .event-link {
-          margin-top: 1rem;
+          margin-top: auto;
+          align-self: flex-end;
           display: inline-block;
           padding: 0.5rem 1rem;
           background-color: #3498db;
           color: #fff;
           text-decoration: none;
-          border-radius: 4px;
+          border-radius: 10px;
           transition: background-color 0.3s ease;
         }
   
@@ -61,12 +79,12 @@ class EventComponent extends HTMLElement {
         }
       </style>
       <div class="event-container">
-        <img class="event-image" src="${this.getAttribute('image')}" alt="Event Image">
+        ${image ? `<img class="event-image" src="${image}" alt="Event Image">` : ''}
         <div class="event-data">
-          <h2>${this.getAttribute('title')}</h2>
-          <p class="date">${this.getAttribute('date')}</p>
-          <p>${this.getAttribute('description')}</p>
-          <a class="event-link" href="${this.getAttribute('link')}">${this.getAttribute('link-text')}</a>
+          <h2>${title}</h2>
+          <p class="date">${date}</p>
+          <p>${description}</p>
+          ${link && linkText ? `<a class="event-link" href="${link}">${linkText}</a>` : ''}
         </div>
       </div>
     `;

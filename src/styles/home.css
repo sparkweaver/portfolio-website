@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -16,6 +15,10 @@
   width: auto;
   height: 20rem;
   border-radius: 10px;
+}
+
+.home-data {
+  margin-left: 3rem;
 }
 
 h2 {
