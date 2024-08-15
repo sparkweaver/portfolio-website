@@ -9,7 +9,7 @@ class NavBarComponent extends HTMLElement {
         background-color: #3498db;
         color: #fff;
         box-sizing: border-box;
-        height: 50px;
+        height: 45px;
       }
 
       nav {
