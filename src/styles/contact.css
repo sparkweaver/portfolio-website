@@ -21,21 +21,21 @@
 .contact-info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .social-links {
   display: flex;
-  justify-content: center; /* Center the icons horizontally */
-  gap: 1rem; /* Add spacing between icons */
+  justify-content: center;
+  gap: 1rem;
 }
 
 .social-links a {
-  color: #333; /* Adjust icon color as needed */
-  font-size: 24px; /* Adjust icon size as needed */
+  color: #333;
+  font-size: 24px;
 }
 
 .contact img {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
