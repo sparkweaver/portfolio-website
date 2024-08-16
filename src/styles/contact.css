@@ -26,13 +26,13 @@
 
 .social-links {
   display: flex;
-  justify-content: center; /* Center the icons horizontally */
-  gap: 1rem; /* Add spacing between icons */
+  justify-content: center;
+  gap: 1rem;
 }
 
 .social-links a {
-  color: #333; /* Adjust icon color as needed */
-  font-size: 24px; /* Adjust icon size as needed */
+  color: #333;
+  font-size: 24px;
 }
 
 .contact img {
