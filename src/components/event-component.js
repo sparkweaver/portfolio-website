@@ -34,7 +34,7 @@ class EventComponent extends HTMLElement {
           float: left;
           width: auto;
           height: auto;
-          max-width: 20%;
+          max-width: 30%;
           object-fit: cover;
           border-radius: 10px;
         }
