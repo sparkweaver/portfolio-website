@@ -77,6 +77,17 @@ class EventComponent extends HTMLElement {
         .event-link:hover {
           background-color: #2980b9;
         }
+
+        @media (max-width: 800px) {
+          .event-container {
+            flex-direction: column;
+          }
+
+          .event-image {
+            float: none;
+            max-width: 100%;
+          }
+        }
       </style>
       <div class="event-container">
         ${image ? `<img class="event-image" src="${image}" alt="Event Image">` : ''}

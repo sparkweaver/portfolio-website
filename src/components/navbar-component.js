@@ -43,6 +43,22 @@ class NavBarComponent extends HTMLElement {
         background-color: #5dade2;
         color: #000;
       }
+
+      @media (max-width: 800px) {
+        :host {
+          height: auto;
+        }
+
+        nav {
+          flex-direction: column;
+        }
+
+        a {
+          width: 100%;
+          border-left: none;
+          border-bottom: 1px solid #555;
+        }
+      }
     </style>
 
     <nav>
