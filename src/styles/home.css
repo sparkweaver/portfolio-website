@@ -45,3 +45,9 @@ a:hover {
 .list li strong {
   color: #444;
 }
+
+@media (max-width: 800px) {
+  .content-box {
+    flex-direction: column;
+  }
+}
