@@ -1,0 +1,8 @@
+<!-- In an attempt to fix the reload issue -->
+ <script type="text/javascript">
+    var redirectTo = "/index.html";
+    if (location.pathname !== "/") {
+        redirectTo += "?" + location.pathname;
+    }
+    windowlocation.replace(redirectTo);
+ </script>
