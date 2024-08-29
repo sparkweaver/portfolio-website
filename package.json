@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A static web-page",
-  "homepage": "http://sparkweaver.github.io",
+  "homepage": "http://sparkweaver.github.io/",
   "main": "index.html",
   "scripts": {
     "lint": "eslint src/**/*.js",
