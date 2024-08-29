@@ -1,9 +1,10 @@
 {
-  "name": "portfolio-website",
+  "name": "portfolio",
   "version": "1.0.0",
   "type": "module",
   "description": "A static web-page",
-  "main": "index.js",
+  "homepage": "http://sparkweaver.github.io",
+  "main": "index.html",
   "scripts": {
     "lint": "eslint src/**/*.js",
     "format": "prettier --write src/**/*.{js,css,html}",
@@ -18,6 +19,6 @@
     "prettier": "^3.3.3"
   },
   "dependencies": {
-    "portfolio-website": "file:"
+    "portfolio": "file:"
   }
 }
